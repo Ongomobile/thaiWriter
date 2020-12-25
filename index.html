@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Thai Learning Tools</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This site is for practicing   writing Thai language">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+</head>
+
+<body class="darken">
+	<div class="Grid">
+		<nav role="navigation" class="navBar">
+			<nav class="wrapper">
+				<div class="logo">
+					<a href="https://www.ongomobile.com" target="_blank">
+						<img src="./images/logo.png">
+					</a>
+				</div>
+				<input type="checkbox" id="menu-toggle">
+				<label for="menu-toggle" class="label-toggle"></label>
+				</input>
+				<ul>
+					<li class="textLinks">
+						<a href="https://www.ongomobile.com/contact" target="_blank">CONTACT</a>
+					</li>
+					<li class="textLinks">
+						<a href="https://medium.com/@OngoMobile/" target="_blank">BLOG</a>
+					</li>
+				</ul>
+			</nav>
+		</nav>
+		<header role="header">
+			<div class="slogan" role="slogan">
+				<h1>Practice Thai Sentences!</h1>
+			</div>
+		</header>
+
+		<main role="main" class="main-content">
+			<div class="callToAction">
+				<div class="formHeader">
+					<h2>Thai Sentence Maker</h2>
+					<p>Type in Thai</p>
+				</div>
+				<form role="free trial form" id="myForm" class="trialForm">
+					<input class="txtInput" id="timeTxt" type="text" name="time" placeholder="Time" value="">
+					<input class="txtInput" id="subjectTxt" type="text" name="subject" placeholder="Subject" value="">
+					<input class="txtInput" id="tenseTxt" type="text" name="tense" placeholder="Tense จะ" value="">
+					<input class="txtInput" id="verbText" type="text" name="verb" placeholder="Verb" value="">
+					<input class="txtInput" id="adjectiveTxt" type="text" name="object" placeholder="Object, Adjective, Adverb" value="">
+					<input class="txtInput" id="questionTxt" type="text" name="question" placeholder="Question Word" value="">
+					<button id="makeSentenceBtnPressed" class="submitBtn" type="submit">Make Thai Sentence!</button>
+					<button id="reset" class="resetBtn">Reset</button>
+				</form>
+			</div>
+		</main>
+		<section class="display">
+			<div class="results">
+				<span id="resultsDisplay" class="sentence">Your sentence goes here!</span>
+			</div>
+		</section>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>
